@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -11,3 +20,158 @@ body {
     background-color: #fff;
 }
 
+
+
+.header {
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    min-height: 55px;
+}
+
+.header_logo {
+    padding: 10px;
+    width: 35%;
+}
+.logo_title {
+    font-size: 31px;
+    font-weight: 700;
+    color: #000;
+    margin: auto;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+.logo_subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin: auto;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+.header_city {
+    font-family: Roboto, sans-serif;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+
+}
+
+.city_name {
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+.city_street {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.header_btn {
+    padding: 10px;
+    width: 23.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: #fff;
+    background-color: #46D9FF;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Roboto, sans-serif;
+}
+
+.btn:hover {
+    background-color: #0083af;
+}
+
+
+.header_info {
+    padding: 10px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.header_number {
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+
+
+.catalog_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 10px;
+}
+.catalog_nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #00afced7;
+
+}
+
+.catalog_link_dev {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #ffffff;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    font-family: Roboto, sans-serif;
+    transition: all 0.3s ease;
+}
+.catalog_link_dev:hover {
+    background-color: #00afcee3;
+}
+.catalog_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    font-family: Roboto, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.catalog_link:hover {
+    color: #fafafa;
+}
