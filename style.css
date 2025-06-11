@@ -54,14 +54,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.logo_subtitle {
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    margin: auto;
-    text-align: center;
-    font-family: Roboto, sans-serif;
-}
+
 
 .header_city {
     font-family: Roboto, sans-serif;
@@ -141,7 +134,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    background-color: #00afced7;
 
 }
 
@@ -158,9 +150,6 @@ body {
     font-family: Roboto, sans-serif;
     transition: all 0.3s ease;
 }
-.catalog_link_dev:hover {
-    background-color: #00afcee3;
-}
 .catalog_link {
     display: flex;
     justify-content: center;
@@ -173,5 +162,152 @@ body {
 }
 
 .catalog_link:hover {
-    color: #fafafa;
+    color: #4dc8e7;
+}
+
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #000;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+  top: 88px;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  background: rgb(0, 173, 173);
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: .3s;
+  width: 300px;
+}
+.menu-item {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.menu-item:hover {
+  background: rgba(255,255,255,.2)
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}
+.menu{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .menu{
+        display: block;
+    }
+    .catalog_nav {
+        display: none;
+    }
+    .catalog_section{
+        justify-content: flex-start;
+    }
+    .header_number {
+        font-size: 20px;
+    }
+    .header_btn {
+        width: 30%;
+    }
+    .header_city {
+        width: 30%;
+    }
+    .header_logo {
+        width: 30%;
+    }
+    .logo_title {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 1028px) {
+    .logo_title{
+        font-size: 18px;
+    }
+    .header_number {
+        font-size: 18px;
+    }
+    .btn{
+        padding: 10px 40px;
+    }
+    .city_name{
+        font-size: 14px;
+    }
+    .city_street{
+        font-size: 14px;
+    }
+}
+@media (max-width: 868px) {
+    .header_city {
+        display: none;
+    }
+    .header_btn {
+        display: none;
+    }
+    .header_section{
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 668px) {
+    .logo_title{
+        font-size: 14px;
+    }
+    .header_number {
+        font-size: 14px;
+    }
+
 }
