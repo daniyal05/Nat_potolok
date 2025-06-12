@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Nat_potolok</title>
 </head>
@@ -149,16 +151,24 @@
                     </p>
                     <a href="#" class="about_us_btn">Подробнее</a>
                 </div>
-                <div class="about_us_img_section">
-                    <swiper-container>
-                        <swiper-slide>
-                            <img class="about_us_img" src="img/mat.jpg" alt="img">
-                        </swiper-slide>
-                        <swiper-slide>
-                            <img class="about_us_img" src="img/mat.jpg" alt="img">
-                        </swiper-slide>
-                        
-                    </swiper-container>
+                <div class="about_us_img_section swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img class="about_us_img" src="img/pot.jpg" alt="img">
+                        </li>
+                        <li class="swiper-slide">
+                            <img class="about_us_img" src="img/pot.jpg" alt="img">
+                        </li>
+                        <li class="swiper-slide">
+                            <img class="about_us_img" src="img/pot.jpg" alt="img">
+                        </li>
+                        <li class="swiper-slide">
+                            <img class="about_us_img" src="img/pot.jpg" alt="img">
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -168,7 +178,7 @@
         </section>
 
     </main>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
