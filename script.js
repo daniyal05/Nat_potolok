@@ -18,3 +18,7 @@ new Swiper('.swiper', {
 
   }
 });
+
+Fancybox.bind('[data-fancybox="gallery"]',{
+
+});
