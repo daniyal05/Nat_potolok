@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $textarea = $_POST['text'];
-$token = "7878735396:AAFcafREplyEd80GN9jxM4n84GP5n2KGcPk";
+$token = "token";
 $chat_id = "-1002811449230";
 $arr = array(
   'Имя пользователя: ' => $name,
