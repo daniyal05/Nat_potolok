@@ -299,7 +299,7 @@
                 </div>    
                 <div class="request_form_section">
                     <h1 class="request_form_title">Заявка</h1>
-                    <form action="telegram.php" method="post" class="request_form">
+                    <form  method="post" class="request_form" iшв=form>
                         <input class="request_form_input" type="text" name="name" placeholder="Ваше имя" required>
                         <input class="request_form_input" type="tel" name="phone" placeholder="Ваш телефон: +79999999999"  pattern="^\7[1-9]{10}$" required>
                         <textarea class="request_form_input" placeholder="Сообщение" name="text" required></textarea>
@@ -325,9 +325,11 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <!-- Linking Fancybox gallery -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    
-    <script src="script.js"></script>
 
+    <!-- Linking axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="oper.js"></script>
     <script src="https://kit.fontawesome.com/8087c8c5c0.js" crossorigin="anonymous"></script>
 </body>
 </html>
